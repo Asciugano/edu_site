@@ -42,6 +42,19 @@ a {
     transition: background-color 0.3s;
 }
 
+h2 {
+    display: inline-block;
+}
+
+.elenco {
+    list-style-type: circle;
+    text-align: left;
+}
+
+.elenco li {
+    margin: 5px;
+}
+
 a:hover {
     background-color: #27ae60;
 }
@@ -49,4 +62,19 @@ a:hover {
 .error {
     color: #e74c3c;
     font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+}
+
+.text {
+    text-align: left;
+}
+
+.info {
+    width: 50%;
 }

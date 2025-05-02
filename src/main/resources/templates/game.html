@@ -16,8 +16,10 @@
     <div th:if="${game == null}" class="error">
         <p>Gioco non trovato!</p>
     </div>
+    <a href="http://localhost:6080/vnc.html">Gioca</a><br>
     <a th:href="${game.getUrl()}">Scarica</a>
     <a href="/play">Torna alla lista dei giochi</a>
 </div>
+
 </body>
 </html>

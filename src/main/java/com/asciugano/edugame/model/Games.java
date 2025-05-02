@@ -13,6 +13,18 @@ public class Games {
     private String description;
     @Column(unique = true)
     private String image;
+    @Column(unique = true)
+    private String container;
+    @Column(nullable = false)
+    private String creator;
+
+    public String getCreator() { return creator; }
+
+    public void setCreator(String creator) { this.creator = creator; }
+
+    public String getContainer() { return container; }
+
+    public void setContainer(String container) { this.container = container; }
 
     public String getUrl() { return url; }
 

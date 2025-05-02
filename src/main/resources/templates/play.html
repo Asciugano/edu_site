@@ -8,8 +8,16 @@
 <body>
 
 <ul>
-    <li th:each="game:${games}" th:text="${game}"></li>
+    <li th:each="game:${games}">
+        <div class="container">
+            <h2 th:text="${game.getName()}"></h2>
+            <p th:text="${game.getDescription()}"></p>
+            <a th:href="@{/play/{id}(id=${game.getId()})}">visualizza</a>
+        </div>
+    </li>
 </ul>
+
+    <a th:href="@{/info}">Info</a>
 
 </body>
 </html>
