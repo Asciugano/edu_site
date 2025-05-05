@@ -69,6 +69,18 @@ ul {
 }
 
 .title {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
+.null {
+    position: absolute;
+    top: 10%;
+    height: 7%;
+    width: 100%;
 }
 
 .text {

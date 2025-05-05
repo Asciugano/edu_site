@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Dettagli del Gioco</h1>
+    <h1 class="title">Dettagli del Gioco</h1>
     <div th:if="${game != null}">
         <p><strong>ID:</strong> <span th:text="${game.getId()}"></span></p>
         <p><strong>Nome:</strong> <span th:text="${game.getName()}"></span></p>
@@ -16,7 +16,8 @@
     <div th:if="${game == null}" class="error">
         <p>Gioco non trovato!</p>
     </div>
-    <a href="http://localhost:6080/vnc.html">Gioca</a><br>
+<!--    <a href="http://localhost:6080/vnc.html">Gioca</a><br>-->
+    <a href=" https://coalition-laos-sticks-numerical.trycloudflare.com/vnc.html">Gioca</a><br>
     <a th:href="${game.getUrl()}">Scarica</a>
     <a href="/play">Torna alla lista dei giochi</a>
 </div>
